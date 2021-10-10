@@ -2,6 +2,8 @@ import React,{useContext} from "react";
 import {Link} from "react-router-dom";
 import {cartContext} from "../globle/CartContext";
 import StripeCheckout from 'react-stripe-checkout';
+import add from "../img/add.svg";
+import remove from "../img/remove.svg";
 
 const Cart =()=>{
 	const data = useContext(cartContext);
@@ -23,9 +25,9 @@ const Cart =()=>{
 										<h3>${product.price}.00</h3>
 									</div>
 									<div className="cart_right">
-										<img src="image/add.svg" onClick={()=>dispatch({type:"INC", id : product.id, product}) } className="add button" alt="button not found"  />
+										<img src={add} onClick={()=>dispatch({type:"INC", id : product.id, product}) } className="add button" alt="button not found"  />
 										<h5>{product.myqty}</h5>
-										<img src="image/remove.svg" onClick={()=>dispatch({type:"DEC", id : product.id, product}) } className="add button" alt="button not found"/>
+										<img src={remove} onClick={()=>dispatch({type:"DEC", id : product.id, product}) } className="add button" alt="button not found"/>
 									</div>
 								</div>
 								)

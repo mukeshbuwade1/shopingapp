@@ -1,4 +1,8 @@
 import React , {useState, createContext} from "react";
+import camera from "../img/camera.jpg";
+import DSLR from "../img/DSLR.jpg";
+import perfume from "../img/perfume.jpg";
+import watch from "../img/watch.jpg";
 
 const ProductContext = createContext();
 const data = [
@@ -6,7 +10,7 @@ const data = [
 			id:1,
 			name:"item no 1",
 			price:100,
-			imgsrc:"image/DSLR.jpg",
+			imgsrc:DSLR,
 			status:'hot',
 			myqty:1
 		},
@@ -14,7 +18,7 @@ const data = [
 			id:2,
 			name:"item no 2",
 			price:200,
-			imgsrc:"image/perfume.jpg",
+			imgsrc:perfume,
 			status:'new',
 			myqty:1
 		},
@@ -22,7 +26,7 @@ const data = [
 			id:3,
 			name:"item no 3",
 			price:300,
-			imgsrc:"image/watch.jpg",
+			imgsrc:watch,
 			status:'new',
 			myqty:1
 		},
@@ -30,7 +34,7 @@ const data = [
 			id:4,
 			name:"item no 4",
 			price:400,
-			imgsrc:"image/camera.jpg",
+			imgsrc:camera,
 			status:'hot',
 			myqty:1
 		},
@@ -38,7 +42,7 @@ const data = [
 			id:5,
 			name:"item no 5",
 			price:500,
-			imgsrc:"image/perfume.jpg",
+			imgsrc:perfume,
 			status:'hot',
 			myqty:1
 		},
@@ -46,7 +50,7 @@ const data = [
 			id:6,
 			name:"item no 6",
 			price:600,
-			imgsrc:"image/camera.jpg",
+			imgsrc:camera,
 			status:'hot',
 			myqty:1
 		},
@@ -54,7 +58,7 @@ const data = [
 			id:7,
 			name:"item no 7",
 			price:700,
-			imgsrc:"image/watch.jpg",
+			imgsrc:watch,
 			status:'new',
 			myqty:1
 		},
@@ -62,7 +66,7 @@ const data = [
 			id:8,
 			name:"item no 8",
 			price:800,
-			imgsrc:"image/DSLR.jpg",
+			imgsrc:DSLR,
 			status:'hot',
 			myqty:1
 		}
