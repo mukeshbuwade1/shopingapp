@@ -10,7 +10,7 @@ const data = [
 			id:1,
 			name:"item no 1",
 			price:100,
-			imgsrc:DSLR,
+			imgsrc:"https://github.com/mukeshbuwade1/shopingapp/blob/master/src/img/DSLR.jpg",
 			status:'hot',
 			myqty:1
 		},
